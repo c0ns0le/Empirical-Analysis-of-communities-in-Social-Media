@@ -10,7 +10,7 @@ pd.set_option('display.mpl_style', 'default')
 
 consumerKey = 'i54fIljKBTLPrp7sEg9nh7ZSZ'
 consumerSecret = 'NSxZHzg0zkvFGxtjlmJ09Prx0u0rpxWYl1UO5lxIl6sbcepBCB'
-access_token = '1201081159-Bwev81uKRnbAUeeRrd2CidpBMcFB68Xuni9WH3v'
+access_token = '1201081159-Bwev81uKRnbAUeeRrd2CidpBMcFB68Xuni9WH3v'  #my account details (please change this to your respective account details)
 access_secret = '8551xRS8cY73N6cBUoVgbMBPqTdNJ70oAIFGL9VbZLt5W'
 
 #Use tweepy.OAuthHandler to create an authentication using the given key and secret
@@ -21,13 +21,13 @@ api = tweepy.API(auth)
 auth.set_access_token(access_token, access_secret)
 
 #stream = Stream(auth)
-#Perform a basic search query where we search for the '#Oscars2015' in the tweets
+#Perform a basic search query where we search for the '#ChennaiRainsHelp' in the tweets
 result = api.search(q='%23ChennaiRainsHelp') #%23 is used to specify '#'
 
 # Print the number of items returned by the search query to verify our query ran. Its 15 by default
 len(result)
 
-tweet = result[0] #Get the first tweet in the result
+tweet = result[0]  #Get the first tweet in the result
 
 # Analyze the data in one tweet to see what we require
 for param in dir(tweet):
