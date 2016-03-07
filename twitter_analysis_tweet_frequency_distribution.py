@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 
 #frequency distribution              
 
-
 def main(tweetFile):
   tweet_file = open(tweetFile)                        # Open the file for reading
   tweet_hash = {}                                     # Define a dictionary for keeping the hashtags as keys and their frequency as values
