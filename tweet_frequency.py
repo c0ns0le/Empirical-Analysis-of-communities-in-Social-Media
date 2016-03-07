@@ -3,8 +3,6 @@ import json
 import operator
 import matplotlib.pyplot as plt
 
-#Description : This is the main function for python script which processes the tweets for frequency 
-
 
 def main(tweetFile):
   tweet_file = open(tweetFile)                        # Open the file for reading
