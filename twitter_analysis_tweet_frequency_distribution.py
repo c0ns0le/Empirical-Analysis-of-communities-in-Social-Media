@@ -33,5 +33,5 @@ if __name__ == '__main__':
   if len(sys.argv) == 2:
     main(sys.argv[1])
   else:
-    print('Usage: python sentiment_analysis.py stream_modi.json')
+    print('Usage: python twitter_analysis_tweet_frequency_distribution.py stream_modi.json')
     print(' here stream_modi.json is a text file with live tweets from twitter in json format each tweet separated by a new line ')
